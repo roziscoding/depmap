@@ -1,4 +1,4 @@
-import { colors } from "cliffy/ansi/colors.ts";
+import { colors } from "../deps.ts";
 
 export const fatal = (response: Response) => {
   if (response.status === 404) {

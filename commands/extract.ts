@@ -1,9 +1,8 @@
-import { Command } from "cliffy/command/mod.ts";
-import { colors } from "x/cliffy@v1.0.0-rc.3/ansi/colors.ts";
+import { colors, Command } from "../deps.ts";
 import { readDenoFile } from "../lib/config.ts";
 import { info } from "../lib/log.ts";
 
-const extractable = (key: string | string[]) =>
+const extractable = (key: string | [string, unknown]) =>
   !["x/", "std/"]
     .includes(Array.isArray(key) ? key[0] : key);
 

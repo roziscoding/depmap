@@ -1,5 +1,4 @@
-import { colors } from "cliffy/ansi/colors.ts";
-import { Command } from "cliffy/command/mod.ts";
+import { colors, Command } from "../deps.ts";
 import { readDenoFile, writeDenoFile } from "../lib/config.ts";
 import { info } from "../lib/log.ts";
 

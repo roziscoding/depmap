@@ -1,6 +1,4 @@
-import { colors } from "cliffy/ansi/colors.ts";
-import { Command } from "cliffy/command/mod.ts";
-import { z } from "zod/mod.ts";
+import { colors, Command, zod as z } from "../deps.ts";
 import { readDenoFile, writeDenoFile } from "../lib/config.ts";
 import { fatal, info } from "../lib/log.ts";
 

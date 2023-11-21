@@ -1,8 +1,8 @@
 #!/usr/bin/env -S deno run -A
-import { Command } from "cliffy/command/mod.ts";
 import extract from "./commands/extract.ts";
 import map from "./commands/map.ts";
 import unmap from "./commands/unmap.ts";
+import { Command } from "./deps.ts";
 
 const main = await new Command()
   .name("depmap")

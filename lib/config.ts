@@ -1,5 +1,5 @@
-import { colors } from "cliffy/ansi/colors.ts";
-import { existsSync } from "std/fs/mod.ts";
+import { existsSync } from "https://deno.land/std@0.207.0/fs/mod.ts";
+import { colors } from "../deps.ts";
 import { info } from "./log.ts";
 
 export function denoFilePath(fileName?: string, fallback?: string) {
