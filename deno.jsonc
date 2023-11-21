@@ -4,5 +4,6 @@
   },
   "tasks": {
     "depmap": "deno run -A dep.ts"
-  }
+  },
+  "lock": false
 }

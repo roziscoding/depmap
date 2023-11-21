@@ -8,7 +8,7 @@ Deno import map manager.
 ## Usage
 
 ```sh
-deno install --allow-net --allow-read --allow-write https://raw.githubusercontent.com/roziscoding/depmap/main/cli.ts
+deno install --allow-net --allow-read --allow-write -n depmap https://raw.githubusercontent.com/roziscoding/depmap/main/cli.ts
 ```
 
 ```sh
