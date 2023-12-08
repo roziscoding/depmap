@@ -21,4 +21,7 @@ const getLatestVersion = async (name: string) => {
 export default new Command<{ config?: string }>()
   .description("Gets the latest version of a package")
   .arguments("<name:string>")
-  .action(async (_, name) => getLatestVersion(name).then(console.log));
+  .action(async (_, name) => {
+    const version = await getLatestVersion(name)
+    Deno.writeAllSync(Deno.stdout, new TextEncoder().encode(version))
+  });
