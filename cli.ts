@@ -2,6 +2,7 @@
 import extract from "./commands/extract.ts";
 import map from "./commands/map.ts";
 import unmap from "./commands/unmap.ts";
+import latest from "./commands/latest.ts"
 import { Command } from "./deps.ts";
 
 const main = await new Command()
@@ -13,5 +14,6 @@ const main = await new Command()
 main.command("map,m", map);
 main.command("unmap,u", unmap);
 main.command("extract", extract);
+main.command("latest,l", latest);
 
 main.parse(Deno.args);
