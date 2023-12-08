@@ -23,5 +23,5 @@ export default new Command<{ config?: string }>()
   .arguments("<name:string>")
   .action(async (_, name) => {
     const version = await getLatestVersion(name)
-    Deno.writeAllSync(Deno.stdout, new TextEncoder().encode(version))
+    Deno.writeAllSync(Deno.stdout, new TextEncoder().encode(`https://deno.land/x/${name}@${version}/`))
   });
